@@ -1,0 +1,28 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.nextButton {
+  margin: 5px;
+}
+
+.Card {
+  display: flex;
+  background-color: white;
+  color: black;
+  width: 500px;
+  height: 350px;
+  border-radius: 5%;
+  border-style: double;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+
+
+
