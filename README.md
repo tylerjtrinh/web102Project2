@@ -28,7 +28,8 @@ The following **required** functionality is completed:
 
 Here's a walkthrough of implemented required features:
 
-![project2-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/451a375e-d9f5-46b9-bb06-6f432d41e8bb)
+
+![project2-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/c80bb948-5ad9-41f6-bcb8-1524c3d9aee9)
 
 
 <!-- Replace this with whatever GIF tool you used! -->
