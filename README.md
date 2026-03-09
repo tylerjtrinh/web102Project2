@@ -28,10 +28,11 @@ The following **required** functionality is completed:
 
 Here's a walkthrough of implemented required features:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+![project2-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/451a375e-d9f5-46b9-bb06-6f432d41e8bb)
+
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
+GIF created with imgur  
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
