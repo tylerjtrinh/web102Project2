@@ -28,7 +28,7 @@ The following **optional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
-![project3pt2-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/19555d3f-fb44-406c-975a-d279e946d85f)
+![project3pt2-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/fb4e54fd-bd7b-408a-811c-bdd6d63a1d69)
 
 
 <!-- Replace this with whatever GIF tool you used! -->
