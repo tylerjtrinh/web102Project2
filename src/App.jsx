@@ -47,14 +47,48 @@ function App() {
  ];
 
  const [currentCard, setCurrentCard] = useState(0)
+ const [userGuess, setUserGuess] = useState("");
+ const [feedback, setFeedback] = useState("");
+ 
  const nextCard = () => {
+    if (currentCard < cardSet.length - 1) {
+      setCurrentCard(currentCard + 1);
+      resetTurn();
+    }
+  };
+
+ const prevCard = () => {
+    if (currentCard > 0) {
+      setCurrentCard(currentCard - 1);
+      resetTurn();
+    }
+  };
+
+ const resetTurn = () => {
+    setUserGuess("");
+    setFeedback("");
+  };
+
+ const checkAnswer = () => {
+    const correctAnswer = cardSet[currentCard].answer.toLowerCase();
+    if (userGuess.toLowerCase() === correctAnswer || correctAnswer.includes(userGuess.toLowerCase()) && userGuess !== "") {
+      setFeedback("correct");
+    } else {
+      setFeedback("wrong");
+    }
+  };
+
+  /*
+  commenting out due to change of requirements
+  const nextCard = () => {
   let randomInt = Math.floor(Math.random() * cardSet.length);
   //this is so that we don't get the same card again
   while(randomInt == currentCard) {
     randomInt = Math.floor(Math.random() * cardSet.length);
   }
   setCurrentCard(randomInt);
- }
+ } */
+
   return (
     <>
     <div>
@@ -67,9 +101,20 @@ function App() {
       </h5>
     </div>
     <Card className = 'Card' question={cardSet[currentCard]["question"]} answer={cardSet[currentCard]["answer"]}/>
+    <div>
+      <p>Guess the answer here</p>
+      <input 
+          type="text" 
+          value={userGuess}
+          onChange={(e) => setUserGuess(e.target.value)}
+          placeholder="Type your guess here..."
+          className={feedback}
+        />
+      <button className='nextButton' onClick={checkAnswer}>Submit Guess</button>
+    </div>
     <div >
-    <button className='nextButton'>←</button>
-    <button className='nextButton' onClick={nextCard}>→</button>
+    <button className='nextButton' onClick = {prevCard} disabled={currentCard === 0}>←</button>
+    <button className='nextButton' onClick={nextCard} disabled={currentCard === cardSet.length - 1}>→</button>
     </div>
     </>
   )

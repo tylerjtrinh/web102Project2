@@ -22,7 +22,11 @@
   cursor: pointer;
 }
 
+.correct {
+  border-color: green;
+}
 
-
-
+.wrong {
+  border-color: red
+}
 
