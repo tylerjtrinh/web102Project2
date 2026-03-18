@@ -1,35 +1,34 @@
-# Web Development Project 2 - *FlashCards*
+# Web Development Project 3 - *Flash Cards Part 2*
 
-Submitted by: **Tyler Trinhe**
+Submitted by: **Tyler Trinh**
 
-This web app: **DIsplays flashcards to help you learn japanese!**
+This web app: **Uses flashcards to help you study beginner Japanese!**
 
-Time spent: **4** hours spent in total
+Time spent: **2** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
+- [X] **The user can enter their guess into an input box *before* seeing the flipside of the card**
+  - Application features a clearly labeled input box with a submit button where users can type in a guess
+  - Clicking on the submit button with an **incorrect** answer shows visual feedback that it is wrong 
+  -  Clicking on the submit button with a **correct** answer shows visual feedback that it is correct
+- [X] **The user can navigate through an ordered list of cardss**
+  - A forward/next button displayed on the card navigates to the next card in a set sequence when clicked
+  - A previous/back button displayed on the card returns to the previous card in the set sequence when clicked
+  - Both the next and back buttons should have some visual indication that the user is at the beginning or end of the list (for example, graying out and no longer being available to click), not allowing for wrap-around navigation
 
-- [X] **The app displays the title of the card set, a short description, and the total number of cards**
-  - [X] Title of card set is displayed 
-  - [X] A short description of the card set is displayed 
-  - [X] A list of card pairs is created
-  - [X] The total number of cards in the set is displayed 
-  - [X] Card set is represented as a list of card pairs (an array of dictionaries where each dictionary contains the question and answer is perfectly fine)
-- [X] **A single card at a time is displayed**
-  - [X] Only one half of the information pair is displayed at a time
-- [X] **Clicking on the card flips the card over, showing the corresponding component of the information pair**
-  - [X] Clicking on a card flips it over, showing the back with corresponding information 
-  - [X] Clicking on a flipped card again flips it back, showing the front
-- [X] **Clicking on the next button displays a random new card**
+The following **optional** features are implemented:
+
+- [X] A user’s answer may be counted as correct even when it is slightly different from the target answer
+  - Answers are considered correct even if they only partially match the answer on the card 
+  - Examples: ignoring uppercase/lowercase discrepancies, ignoring punctuation discrepancies, matching only for a particular part of the answer rather than the whole answer
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented required features:
-
-
-![project2-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/c80bb948-5ad9-41f6-bcb8-1524c3d9aee9)
+Here's a walkthrough of implemented user stories:
+![project3pt2-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/19555d3f-fb44-406c-975a-d279e946d85f)
 
 
 <!-- Replace this with whatever GIF tool you used! -->
@@ -55,4 +54,4 @@ GIF created with imgur
     distributed under the License is distributed on an "AS IS" BASIS,
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
-    limitations under the License.
+    limitations under the License
